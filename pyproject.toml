@@ -1,0 +1,23 @@
+[build-system]
+requires = ["poetry==1.3.2"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "learning_python"
+version = "3.0.0"
+description = "Free course on learning python for network engineers"
+authors = ["Kirk Byers <ktbyers@twb-tech.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/twin-bridges/learning_python"
+classifiers = [
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.11",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "23.3.0"
+
