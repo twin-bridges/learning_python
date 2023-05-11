@@ -1,0 +1,37 @@
+<strong><u>CLASS OUTLINE</u></strong>
+<div dir="ltr" role="presentation">&nbsp;</div>
+
+<!-- Add this style section inside of the 'CLASS OUTLINE' -->
+<style type="text/css">.table-of-contents {
+    /* Set top-level sections to be bold and blue */
+    font-weight: bold;
+    color: #0266c9;
+ }
+ ol.table-of-contents, ol.table-of-contents ol, ol.table-of-contents li {
+    /* Drip tries to put in margins inside of TOC that we don't want - eliminate */
+    margin-bottom: 0;
+    padding-bottom: 0; 
+ }
+ ol.table-of-contents > li {
+    list-style-type: upper-roman;
+ }
+ ol.table-of-contents > li > ol > li {
+    list-style-type: upper-alpha;
+    /* All other sections make text black and not bold */
+    font-weight: normal;
+    color: black;
+ }
+ ol.table-of-contents > li > ol > li > ol > li {
+    list-style-type: decimals;
+ }
+ ol.table-of-contents > li > ol > li > ol > li > ol > li {
+    list-style-type: lower-alpha;
+ }
+ ol.table-of-contents > li > ol > li > ol > li > ol > li > ol > li {
+    list-style-type: lower-roman;
+ }
+</style>
+
+<!-- Tag the very first <ol> tag (ordered-list tag) with the "table-of-contents" class -->
+<ol class="table-of-contents">
+
