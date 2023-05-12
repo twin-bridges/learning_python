@@ -1,1 +1,7 @@
 ipython==8.6.0
+pylama==8.4.1
+black==23.3.0
+rich==13.3.3
+netmiko==4.2.0
+emoji==2.2.0
+
