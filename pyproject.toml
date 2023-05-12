@@ -18,6 +18,10 @@ classifiers = [
 [tool.poetry.dependencies]
 python = ">=3.11,<4.0"
 rich = "^13.3.3"
+ipython = "^8.12.0"
+pylama = "^8.4.1"
+netmiko = "^4.2.0"
+emoji = "^2.2.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "23.3.0"
