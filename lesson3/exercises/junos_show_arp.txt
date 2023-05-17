@@ -1,0 +1,5 @@
+MAC Address       Address         Name                      Interface               Flags
+02:00:00:00:00:10 128.0.0.16      fpc0                      em1.0                   none
+06:ec:49:d0:bd:27 172.30.0.1      172.30.0.1                fxp0.0                  none
+06:1a:97:b0:c4:89 172.30.0.219    172.30.0.219              fxp0.0                  none
+Total entries: 3

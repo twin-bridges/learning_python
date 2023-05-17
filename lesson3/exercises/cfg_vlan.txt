@@ -1,0 +1,6 @@
+int loop 99
+  ip address 10.99.99.1 255.255.255.0
+  no shutdown
+int loop 98
+  ip address 10.98.98.1 255.255.255.0
+  no shutdown
