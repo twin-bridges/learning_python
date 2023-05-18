@@ -18,4 +18,3 @@ print(f"Interfaces: {interfaces}")
 print(f"IP Addresses: {ip_addresses}")
 print("-" * 60)
 print()
-

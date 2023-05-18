@@ -14,4 +14,3 @@ print(f"Interface: {intf_name}")
 print(f"IP Addr: {ip_addr}")
 print("-" * 60)
 print()
-
