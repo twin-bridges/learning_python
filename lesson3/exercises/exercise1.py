@@ -10,6 +10,7 @@ base_addr = "192.168.254."
 last_octet = 0
 
 prefix_length = int(input("\nEnter a subnet prefix length(25-30): "))
+
 subnet_size_bin = 32 - prefix_length
 subnet_size = 2**subnet_size_bin
 number_of_subnets = 256 // subnet_size
