@@ -9,5 +9,3 @@ print("\nCall .split() and assign output to four variables:")
 
 
 print(serial_number)
-
-
