@@ -51,6 +51,6 @@ for line in data.splitlines():
             intf_list.append(intf)
 
     # intf_list is now fully constructed, add it to the VLAN map.
-    vlan_map[vlan_id] = intf_list
+    vlan_map[int(vlan_id)] = intf_list
 
 print(vlan_map)
