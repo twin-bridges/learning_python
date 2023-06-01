@@ -21,7 +21,6 @@ for line in data.splitlines():
     # Construct list of interfaces associated with given VLAN-ID
     intf_list = []
     for intf in intf_groups:
-
         # Check for ranges
         if "-" in intf:
             intf_start, intf_end = intf.split("-")

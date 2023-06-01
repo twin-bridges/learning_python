@@ -1,4 +1,3 @@
-
 my_list = []
 print("\nTry to access index that doesn't exist\n")
 
