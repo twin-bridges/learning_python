@@ -6,6 +6,5 @@ def print_ips(*args):
     print(type(args))
     print(args)
 
+
 print_ips("10.1.1.1", "10.1.1.2", "10.1.1.3")
-
-

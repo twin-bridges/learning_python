@@ -11,5 +11,3 @@ def my_func(*args, **kwargs):
 print("\nCall function: ")
 my_func(1, 2, 3, arg4="hello", arg5="world")
 print()
-
-

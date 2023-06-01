@@ -22,4 +22,3 @@ print()
 print("\nSecond call: ")
 my_func(arg1=1, arg2=2, arg3=3, arg4="hello", arg5="world")
 print()
-

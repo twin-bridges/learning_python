@@ -8,5 +8,3 @@ def display_output(msg1, msg2, msg3):
 
 
 display_output("This is a test", msg3="named args", msg2="of positional and")
-
-

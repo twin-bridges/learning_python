@@ -8,5 +8,3 @@ def display_output(msg1, msg2, msg3="Hello World"):
 
 
 display_output(msg2="foo", msg1="Something")
-
-
