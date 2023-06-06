@@ -4,9 +4,10 @@ filename = "show_ip_int_brief.txt"
 with open(filename) as f:
     data = f.read()
 
+# Initialize the dictionary outside the for-loop.
 interface_ips = {}
 for line in data.splitlines():
-    # Stuff the remaining entries into the list named "_"
+    # Stuff the remaining entries into the list named "_" (Python trick)
     intf, ip_addr, *_ = line.split()
 
     # Skip any line that doesn't contain an IP address.
