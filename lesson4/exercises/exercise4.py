@@ -52,4 +52,8 @@ for line in data.splitlines():
     # intf_list is now fully constructed, add it to the VLAN map.
     vlan_map[int(vlan_id)] = intf_list
 
+print()
+print("VLAN Table:")
+print("-" * 25)
 print(vlan_map)
+print()
