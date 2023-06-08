@@ -17,8 +17,8 @@ print(f"{intf_line_protocol=}")
 print("-" * 80)
 print()
 
-status_is_up = (intf_line_status == "up")
-protocol_is_up = (intf_line_protocol == "up")
+status_is_up = intf_line_status == "up"
+protocol_is_up = intf_line_protocol == "up"
 print()
 print("-" * 80)
 print(f"{status_is_up=}")
