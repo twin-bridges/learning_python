@@ -1,0 +1,19 @@
+Interface 1/1/1 is up
+Admin state is up
+IPv6 address:
+   2001:0db8:85a3:0000:0000:8a2e:0370:7334/24 [VALID]
+IPv6 link-local address: fe80::1e98:ecff:fee3:e800/64 (default)[VALID]
+IPv6 virtual address configured: none
+IPv6 multicast routing: disable
+IPv6 Forwarding feature: enabled
+IPv6 multicast groups locally joined:
+   ff02::ff70:7334 ff02::ffe3:e800 ff02::1 ff02::1:ff00:0
+   ff02::2
+IPv6 multicast (S,G) entries joined: none
+IPv6 MTU: 1524 (using link MTU)
+IPv6 unicast reverse path forwarding: none
+IPv6 load sharing: none
+RX
+         0 packets, 0 bytes
+TX
+         0 packets, 0 bytes
