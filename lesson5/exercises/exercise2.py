@@ -10,7 +10,7 @@ pattern = (
 )
 match = re.search(pattern, bgp_neighbors, flags=re.M)
 if match:
-    bgp_neighbor = match.group("bgp_neighbor")
+    bgp_neighbor_ip = match.group("bgp_neighbor")
     remote_as = match.group("remote_as")
 
 pattern = (
@@ -27,7 +27,7 @@ if match:
     bgp_state = match.group("bgp_state")
 
 print()
-print(f"{bgp_neighbor=}")
+print(f"{bgp_neighbor_ip=}")
 print(f"{remote_as=}")
 print(f"{bgp_version=}")
 print(f"{remote_router_id=}")
