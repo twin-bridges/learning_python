@@ -1,0 +1,13 @@
+Address         Age (sec)  Hardware Addr   Interface
+10.220.88.1       0:00:00  0024.c4e9.48ae  Vlan1, Ethernet1
+10.220.88.20      0:00:11  c89c.1dea.0eb6  Vlan1, Ethernet1
+10.220.88.21      0:00:09  1c6a.7aaf.576c  Vlan1, Ethernet1
+10.220.88.22      0:00:08  a093.5141.b780  Vlan1, Ethernet1
+10.220.88.23      0:00:06  502f.a8b1.6900  Vlan1, Ethernet1
+10.220.88.28      0:00:23  00aa.fc05.b513  Vlan1, Ethernet1
+10.220.88.29      0:00:20  00af.fc9a.e49e  Vlan1, Ethernet1
+10.220.88.30      0:00:18  00ab.fcc0.f97c  Vlan1, Ethernet1
+10.220.88.31      0:00:16  00ac.fc59.97f2  Vlan1, Ethernet1
+10.220.88.37      2:00:16  0001.00ff.0001  Vlan1, Ethernet1
+10.220.88.38      3:17:04  0002.00ff.0001  Vlan1, Ethernet1
+
