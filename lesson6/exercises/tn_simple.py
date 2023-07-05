@@ -5,7 +5,8 @@ import time
 def read(telnet_conn, sleep=1.5):
     time.sleep(sleep)
     data = tn.read_very_eager().decode()
-    return(data)
+    return data
+
 
 if __name__ == "__main__":
 
@@ -17,4 +18,3 @@ if __name__ == "__main__":
 
     d = read(tn)
     print(d)
-
