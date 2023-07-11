@@ -9,7 +9,6 @@ def read(telnet_conn, sleep=1.5):
 
 
 if __name__ == "__main__":
-
     host = "cisco1.lasthop.io"
     username = "pyclass"
 
