@@ -57,13 +57,18 @@ if __name__ == "__main__":
         username=username,
         password=password
     )
-
-    tc2 = TelnetConn(
-        host=host2,
-        username=username,
-        password=password
-    )
-
     tc1.login()
-    tc2.login()
+    tc1.write("\n")
+    data = tc1.read()
+    print(data)
 
+    # data = tc1.read()
+    # tc1.write(f"{username}\n")
+    # data += tc1.read()
+    # tc1.write(f"{password}\n")
+    # data += tc1.read()
+    # print(data)
+
+    # tc2 = TelnetConn(host=host2, username=username, password=password)
+    # tc2.login()
+    #
