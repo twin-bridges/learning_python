@@ -1,23 +1,25 @@
-import paramiko
 import time
+import paramiko
 from getpass import getpass
 
 
-def read(ssh_conn, buffer_size=65535, sleep=1.5):
+def read(ssh_conn, sleep=1.5):
+    BUFFER_SIZE = 65_535
     time.sleep(1.5)
-    data = ssh_conn.recv(buffer_size).decode()
+    data = ssh_conn.recv(BUFFER_SIZE).decode()
     return data
 
 
-def write(ssh_conn, out_data):
-    ssh_conn.send(out_data.encode())
+def write(ssh_conn, data):
+    ssh_conn.send(data.encode())
 
 
 if __name__ == "__main__":
-    host = "cisco1.lasthop.io"
+    host = "cisco1.domain.com"
     username = "pyclass"
     password = getpass()
 
+    # Create the SSH connection
     remote_conn_pre = paramiko.SSHClient()
     remote_conn_pre.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     remote_conn_pre.connect(
@@ -27,10 +29,11 @@ if __name__ == "__main__":
         look_for_keys=False,
         allow_agent=False,
     )
-
     remote_conn = remote_conn_pre.invoke_shell()
+
     d = read(remote_conn)
     print(d)
-    write(remote_conn, out_data="show ip int brief\n")
+
+    write(remote_conn, "\n")
     d = read(remote_conn)
     print(d)

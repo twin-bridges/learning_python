@@ -15,7 +15,7 @@ def write(telnet_conn, data):
 
 
 if __name__ == "__main__":
-    host = "cisco1.lasthop.io"
+    host = "rtr1.domain.com"
     username = "pyclass"
 
     # Create telnet connection

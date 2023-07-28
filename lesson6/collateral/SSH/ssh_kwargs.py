@@ -48,12 +48,12 @@ def cmd_w_paging(ssh_conn, cmd, term_pattern):
 if __name__ == "__main__":
     password = getpass()
     rtr1 = {
-        "host": "cisco1.lasthop.io",
+        "host": "cisco1.domain.com",
         "username": "pyclass",
         "password": password,
     }
     rtr2 = {
-        "host": "cisco2.lasthop.io",
+        "host": "cisco2.domain.com",
         "username": "pyclass",
         "password": password,
     }

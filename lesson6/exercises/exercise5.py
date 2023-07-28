@@ -45,7 +45,7 @@ def show_cmd(telnet_conn, cmd="show ip interface brief"):
 
 
 if __name__ == "__main__":
-    host = "cisco1.lasthop.io"
+    host = "rtr1.domain.com"
     username = "pyclass"
     password = getpass("Enter router password: ")
 

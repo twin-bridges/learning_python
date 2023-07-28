@@ -37,7 +37,7 @@ def login(telnet_conn, username, password, check=r"#"):
 
 
 if __name__ == "__main__":
-    host = "cisco1.lasthop.io"
+    host = "cisco1.domain.com"
     username = "pyclass"
     if os.getenv("TN_PASSWORD"):
         password = os.getenv("TN_PASSWORD")

@@ -7,7 +7,7 @@ Chassis id: 5254.0012.345e
 Port id: Ethernet1/1
 Local Port id: Eth1/1
 Port Description: Ethernet1/1
-System Name: nxos2.lasthop.io
+System Name: nxos2.domain.com
 System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
 TAC support: http://www.cisco.com/tac
 Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
@@ -23,7 +23,7 @@ Chassis id: 5254.0012.345f
 Port id: Ethernet1/2
 Local Port id: Eth1/2
 Port Description: Ethernet1/2
-System Name: nxos2.lasthop.io
+System Name: nxos2.domain.com
 System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
 TAC support: http://www.cisco.com/tac
 Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
@@ -39,7 +39,7 @@ Chassis id: 5254.0012.3460
 Port id: Ethernet1/3
 Local Port id: Eth1/3
 Port Description: Ethernet1/3
-System Name: nxos2.lasthop.io
+System Name: nxos2.domain.com
 System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
 TAC support: http://www.cisco.com/tac
 Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
@@ -55,7 +55,7 @@ Chassis id: 5254.0012.3461
 Port id: Ethernet1/4
 Local Port id: Eth1/4
 Port Description: Ethernet1/4
-System Name: nxos2.lasthop.io
+System Name: nxos2.domain.com
 System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
 TAC support: http://www.cisco.com/tac
 Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.

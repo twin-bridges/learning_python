@@ -1,7 +1,7 @@
 import paramiko
 from getpass import getpass
 
-host = "cisco1.lasthop.io"
+host = "cisco1.domain.com"
 username = "pyclass"
 password = getpass()
 
