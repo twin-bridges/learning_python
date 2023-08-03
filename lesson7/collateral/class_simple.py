@@ -47,9 +47,9 @@ class TelnetConn:
 
 
 if __name__ == "__main__":
-    host1 = "cisco1.lasthop.io"
-    host2 = "cisco2.lasthop.io"
-    username = "pyclass"
+    host1 = "cisco1.domain.com"
+    host2 = "cisco2.domain.com"
+    username = "admin"
     password = getpass("Enter router password: ")
 
     tc1 = TelnetConn(
