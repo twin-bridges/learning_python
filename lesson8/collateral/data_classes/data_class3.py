@@ -13,7 +13,7 @@ class NetDevice:
     host: str
     username: str
     password: str
-    my_list: List = field(default_factory=default_list)
+    interface_ips: List[str] = field(default_factory=default_list)
 
 
 rtr1 = NetDevice(
@@ -22,7 +22,7 @@ rtr1 = NetDevice(
     username="admin",
     password="csco123",
 )
-rtr1.my_list.append("foo")
+rtr1.interface_ips.append("192.168.1.1")
 
 rtr2 = NetDevice(
     device_type="cisco_ios",
