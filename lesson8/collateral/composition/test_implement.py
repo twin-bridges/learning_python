@@ -1,3 +1,11 @@
+"""
+Working class composition code (bridge pattern).
+
+Only SSHConn class is built for the Connection classes.
+
+Need to modify 'host', and 'username' to a device you can
+connect to.
+"""
 import paramiko
 from getpass import getpass
 import time
