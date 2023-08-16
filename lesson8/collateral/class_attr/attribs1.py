@@ -62,10 +62,10 @@ if __name__ == "__main__":
 
     # Two connections to each
     for host in (
-        "rtr1.lasthop.io",
-        "rtr1.lasthop.io",
-        "rtr2.lasthop.io",
-        "rtr2.lasthop.io",
+        "rtr1.domain.com",
+        "rtr1.domain.com",
+        "rtr2.domain.com",
+        "rtr2.domain.com",
     ):
         tc = TelnetConn(
             host=host,

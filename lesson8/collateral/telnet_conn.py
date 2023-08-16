@@ -54,7 +54,7 @@ if __name__ == "__main__":
     password = getpass("Enter router password: ")
 
     tc = TelnetConn(
-        host="rtr2.lasthop.io",
+        host="rtr2.domain.com",
         username=username,
         password=password
     )
