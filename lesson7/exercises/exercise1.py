@@ -13,7 +13,10 @@ rtr1 = NetworkDevice(
     host="host1.domain.com", platform="cisco_xe", username="admin", password="cisco"
 )
 rtr2 = NetworkDevice(
-    host="host2.domain.com", platform="juniper_junos", username="admin", password="juniper123"
+    host="host2.domain.com",
+    platform="juniper_junos",
+    username="admin",
+    password="juniper123",
 )
 
 print(rtr1)

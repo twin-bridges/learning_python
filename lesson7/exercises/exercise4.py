@@ -1,74 +1,42 @@
-from rich import print
-"""
-arista2#show ip ospf neighbor
-Neighbor ID     Instance VRF      Pri State                  Dead Time   Address         Interface
-10.220.88.34    42       default  0   FULL/DROTHER           00:00:30    10.220.88.34    Vlan1
-10.220.88.35    42       default  0   FULL/DROTHER           00:00:31    10.220.88.35    Vlan1
-10.220.88.33    42       default  0   FULL/DROTHER           00:00:38    10.220.88.33    Vlan1
-10.220.88.32    42       default  0   FULL/DROTHER           00:00:30    10.220.88.32    Vlan1
-10.220.88.31    42       default  0   FULL/DROTHER           00:00:35    10.220.88.31    Vlan1
-10.220.88.30    42       default  0   FULL/DROTHER           00:00:29    10.220.88.30    Vlan1
-10.220.88.28    42       default  250 FULL/BDR               00:00:36    10.220.88.28    Vlan1
-
-
-arista2#show ip ospf database 
-
-            OSPF Router with ID(10.220.88.29) (Instance ID 42) (VRF default)
-
-
-                 Router Link States (Area 0.0.0.0)
-
-Link ID         ADV Router      Age         Seq#         Checksum Link count
-10.220.88.28    10.220.88.28    582         0x80000008   0xa410   1
-10.220.88.30    10.220.88.30    307         0x80000006   0xa40c   1
-10.220.88.32    10.220.88.32    297         0x80000008   0x9c0c   1
-10.220.88.34    10.220.88.34    292         0x80000006   0x9c08   1
-10.220.88.31    10.220.88.31    305         0x80000005   0xa40a   1
-10.220.88.33    10.220.88.33    292         0x80000006   0x9e09   1
-10.220.88.29    10.220.88.29    581         0x80000007   0xa40e   1
-10.220.88.35    10.220.88.35    287         0x80000006   0x9a07   1
-"""
-
-
-class OSPFRouter:
-    def __init__(self, instance_id, area, router_id, is_dr=False, is_bdr=False):
-        self.instance_id = instance_id
-        self.area = area
-        self.router_id = router_id
-        self.is_dr = is_dr
-        self.is_bdr = is_bdr
-        self._neighbors = []
+class NetworkDevice:
+    def __init__(self, host, platform, username, password):
+        self.host = host
+        self.platform = platform
+        self.username = username
+        self._password = password
 
     def __str__(self):
-        return f"""
-OSPFRouter:
-    Instance: {self.instance_id}
-    Area: {self.area}
-    Router ID: {self.router_id}
-    DR: {self.is_dr}
-    BDR: {self.is_bdr}
-
-    Neighbors: {self._neighbors}
-
-"""
+        return f"NetworkDevice: {self.host} ({self.platform})"
 
     @property
-    def neighbors(self)
-        self._neigbhors
+    def password(self):
+        return "*" * len(self._password)
 
-    @neighbors.setter
-    def neighbors(self, neighbor_rid):
-        self._neighbors.append(neighbor_rid)
+    @password.setter
+    def password(self, new_passwd):
+        if new_passwd == self._password:
+            raise ValueError("New password not allowed")
 
 
+if __name__ == "__main__":
+    rtr1 = NetworkDevice(
+        host="host1.domain.com", platform="cisco_xe", username="admin", password="cisco"
+    )
+    rtr2 = NetworkDevice(
+        host="host2.domain.com",
+        platform="juniper_junos",
+        username="admin",
+        password="juniper123",
+    )
+    print(rtr1)
+    print(rtr2)
 
-arista2 = OSPFRouter(instance_id=42, area=0, router_id="10.220.88.29", is_dr=True)
-arista2.add_neighbor("10.220.88.28")
-arista2.add_neighbor("10.220.88.30")
-arista2.add_neighbor("10.220.88.31")
-arista2.add_neighbor("10.220.88.32")
-arista2.add_neighbor("10.220.88.33")
-arista2.add_neighbor("10.220.88.34")
-arista2.add_neighbor("10.220.88.35")
-print(arista2._neighbors)
-print(arista2)
+    print("\nSetting new password")
+    try:
+        rtr2.password = "juniper123"
+    except ValueError:
+        pass
+
+    rtr2.password = "new123"
+
+    print(f"\nrtr2 password: {rtr2.password}\n")

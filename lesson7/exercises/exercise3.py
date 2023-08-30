@@ -1,4 +1,5 @@
 from rich import print
+
 """
 arista2#show ip ospf neighbor
 Neighbor ID     Instance VRF      Pri State                  Dead Time   Address         Interface
@@ -11,7 +12,7 @@ Neighbor ID     Instance VRF      Pri State                  Dead Time   Address
 10.220.88.28    42       default  250 FULL/BDR               00:00:36    10.220.88.28    Vlan1
 
 
-arista2#show ip ospf database 
+arista2#show ip ospf database
 
             OSPF Router with ID(10.220.88.29) (Instance ID 42) (VRF default)
 
@@ -51,9 +52,9 @@ OSPFRouter:
     Neighbors: {self._neighbors}
 
 """
+
     def add_neighbor(self, neighbor_rid):
         self._neighbors.append(neighbor_rid)
-
 
 
 arista2 = OSPFRouter(instance_id=42, area=0, router_id="10.220.88.29", is_dr=True)
