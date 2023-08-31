@@ -1,5 +1,4 @@
 from rich import print
-import pdbr
 
 
 class Interface:
@@ -13,7 +12,7 @@ class Interface:
     ):
         self.intf_name = intf_name
 
-        # These two attributes  will use the @property.setter constraints defined below
+        # These two attributes will use the @property.setter constraints defined below
         self.intf_mode = intf_mode
         self.access_vlan = access_vlan
 
@@ -70,12 +69,26 @@ if __name__ == "__main__":
     eth6 = Interface(intf_name="Et6", intf_mode="access", access_vlan=6)
     eth7 = Interface(intf_name="Et7", intf_mode="trunk")
 
-    eth1.intf_mode = "trunk"
-
     for intf in (eth1, eth2, eth3, eth4, eth5, eth6, eth7):
         print(intf)
     print("-" * 50)
     print()
 
-    pdbr.set_trace()
+    print()
+    print("Testing behavior...of setter")
+    eth1.intf_mode = "trunk"
+    print(f"{eth1.intf_mode=}")
+    print(f"{eth1.access_vlan=}")
+    eth1.intf_mode = "access"
+    eth1.access_vlan = 42
+    print(f"{eth1.intf_mode=}")
+    print(f"{eth1.access_vlan=}")
+    try:
+        eth1.intf_mode = "invalid"
+    except ValueError:
+        print("Expected exception handled")
+    try:
+        eth1.access_vlan = "zzzz"
+    except ValueError:
+        print("Expected exception handled")
     print()
