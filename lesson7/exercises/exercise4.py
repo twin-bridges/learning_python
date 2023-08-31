@@ -16,6 +16,7 @@ class NetworkDevice:
     def password(self, new_passwd):
         if new_passwd == self._password:
             raise ValueError("New password not allowed")
+        self._password = new_passwd
 
 
 if __name__ == "__main__":
@@ -39,4 +40,5 @@ if __name__ == "__main__":
 
     rtr2.password = "new123"
 
-    print(f"\nrtr2 password: {rtr2.password}\n")
+    print(f"\nrtr2 password: {rtr2.password}")
+    print(f"\nrtr2 password (hidden): {rtr2._password}\n")
