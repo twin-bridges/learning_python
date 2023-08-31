@@ -19,5 +19,7 @@ rtr2 = NetworkDevice(
     password="juniper123",
 )
 
+print()
 print(rtr1)
 print(rtr2)
+print()

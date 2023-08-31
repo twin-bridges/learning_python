@@ -38,7 +38,7 @@ class OSPFRouter:
         self.router_id = router_id
         self.is_dr = is_dr
         self.is_bdr = is_bdr
-        self._neighbors = []
+        self._neighbors = set()
 
     def __str__(self):
         return f"""
@@ -54,7 +54,10 @@ OSPFRouter:
 """
 
     def add_neighbor(self, neighbor_rid):
-        self._neighbors.append(neighbor_rid)
+        self._neighbors = self._neighbors | {neighbor_rid}
+
+    def remove_neighbor(self, neighbor_rid):
+        self._neighbors = self._neighbors - {neighbor_rid}
 
 
 arista2 = OSPFRouter(instance_id=42, area=0, router_id="10.220.88.29", is_dr=True)
@@ -65,5 +68,6 @@ arista2.add_neighbor("10.220.88.32")
 arista2.add_neighbor("10.220.88.33")
 arista2.add_neighbor("10.220.88.34")
 arista2.add_neighbor("10.220.88.35")
+arista2.remove_neighbor("10.220.88.35")
 print(arista2._neighbors)
 print(arista2)

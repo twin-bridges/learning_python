@@ -1,17 +1,5 @@
 from rich import print
 
-"""
-arista1#show interfaces status
-Port       Name   Status       Vlan     Duplex Speed  Type            Flags Encapsulation
-Et1               connected    1        full   1G     EbraTestPhyPort
-Et2               connected    2        full   1G     EbraTestPhyPort
-Et3               connected    3        full   1G     EbraTestPhyPort
-Et4               connected    4        full   1G     EbraTestPhyPort
-Et5               connected    5        full   1G     EbraTestPhyPort
-Et6               connected    6        full   1G     EbraTestPhyPort
-Et7               connected    trunk    full   1G     EbraTestPhyPort
-"""
-
 
 class Interface:
     def __init__(
@@ -54,7 +42,7 @@ class Interface:
 
 if __name__ == "__main__":
     print()
-    print("---- Solution1 ----")
+    print("-" * 50)
     eth1 = Interface(intf_name="Et1", intf_mode="access", access_vlan=1)
     eth2 = Interface(intf_name="Et2", intf_mode="access", access_vlan=2)
     eth3 = Interface(intf_name="Et3", intf_mode="access", access_vlan=3)
@@ -64,23 +52,6 @@ if __name__ == "__main__":
     eth7 = Interface(intf_name="Et7", intf_mode="trunk")
 
     for intf in (eth1, eth2, eth3, eth4, eth5, eth6, eth7):
-        print(intf)
-    print("-" * 50)
-    print()
-
-    # Alternate solution (load all the objects into a list)
-    interfaces = []
-    for idx in range(1, 7):
-        intf_name = f"Et{idx}"
-        intf = Interface(intf_name=intf_name, intf_mode="access", access_vlan=idx)
-        interfaces.append(intf)
-
-    eth7 = Interface(intf_name="Et7", intf_mode="trunk")
-    interfaces.append(eth7)
-
-    print()
-    print("---- Solution2 ----")
-    for intf in interfaces:
         print(intf)
     print("-" * 50)
     print()
