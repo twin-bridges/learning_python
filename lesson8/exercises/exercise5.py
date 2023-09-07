@@ -50,6 +50,7 @@ class Router:
     def write(self, data):
         self.channel.write(data)
 
+
 rtr1 = Router(
     host="rtr1.domain.com",
     device_type="arista_eos",

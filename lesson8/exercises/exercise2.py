@@ -3,7 +3,7 @@ class Router:
     all_hosts = []
 
     def __init__(self, host):
-        self.host= host
+        self.host = host
         Router.count += 1
         Router.all_hosts.append(host)
 

@@ -6,7 +6,7 @@ from typing import List
 class RouterFacts:
     hostname: str
     vendor: str
-    nos: str
+    network_os: str
     model: str
     os_version: str
     interfaces: List[str]
@@ -17,7 +17,7 @@ class RouterFacts:
 xr_rtr = RouterFacts(
     hostname="la-rtr1",
     vendor="cisco",
-    nos="iosxr",
+    network_os="iosxr",
     model="8201-SYS",
     os_version="7.0.12",
     interfaces=[
@@ -39,3 +39,4 @@ xr_rtr = RouterFacts(
     serial_number="FOC2291AVYB",
 )
 
+print(xr_rtr)
