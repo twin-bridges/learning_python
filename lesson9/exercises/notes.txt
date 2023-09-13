@@ -1,0 +1,5 @@
+So what can I do here?
+
+What can I do on libraries and sys.path.
+
+print out sys.path

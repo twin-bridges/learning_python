@@ -1,0 +1,59 @@
+1. Create a new virtual environment
+
+2. Activate the virtual environment.
+
+3. Do a "pip list" on the new virtual environment. It should only have setuptools and pip
+itself.
+
+4. Upgrade pip to the latest version
+
+
+ktbyers@pydev2 ~/VENV 
+$ python3.11 -m venv foo
+
+ktbyers@pydev2 ~/VENV 
+$ source foo/bin/activate
+
+[foo] ktbyers@pydev2 ~/VENV 
+$ pip list
+Package    Version
+---------- -------
+pip        22.3
+setuptools 65.5.0
+
+[notice] A new release of pip available: 22.3 -> 23.2.1
+[notice] To update, run: pip install --upgrade pip
+
+[foo] ktbyers@pydev2 ~/VENV 
+$ pip install pip==23.2.1
+
+
+5. PIP install rich into the new virtual environment
+
+$ pip install rich
+Collecting rich
+
+
+6. Do a "pip list" after this.
+
+[foo] ktbyers@pydev2 ~/learning_python/lesson9/exercises 
+$ pip list
+Package        Version
+-------------- -------
+markdown-it-py 3.0.0
+mdurl          0.1.2
+pip            23.2.1
+Pygments       2.16.1
+rich           13.5.2
+setuptools     65.5.0
+
+
+7. Do a "pip freeze"
+
+$ pip freeze
+markdown-it-py==3.0.0
+mdurl==0.1.2
+Pygments==2.16.1
+rich==13.5.2
+
+8. Deactivate the virtual environment

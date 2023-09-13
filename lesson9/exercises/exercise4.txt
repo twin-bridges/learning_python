@@ -1,0 +1,12 @@
+
+1. pip install something from github
+
+2. Install a specific branch
+
+3. Install a specific tag
+
+4. Install a specific commit
+
+5. pip install from a requirements.txt
+
+6. pip freeze -> gen reqs.txt -> pip install
