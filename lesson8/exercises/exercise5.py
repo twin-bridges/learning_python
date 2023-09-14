@@ -51,6 +51,7 @@ class Router:
         self.channel.write(data)
 
 
+print()
 rtr1 = Router(
     host="rtr1.domain.com",
     device_type="arista_eos",
@@ -59,3 +60,4 @@ rtr1 = Router(
 )
 rtr1.write("whatever")
 rtr1.read()
+print()
