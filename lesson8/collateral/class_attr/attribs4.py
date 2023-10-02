@@ -9,7 +9,7 @@ class A:
     my_attr = 100
 
     def __init__(self):
-        my_attr = 10
+        my_attr = 10  # noqa
 
 
 print(A.my_attr)
