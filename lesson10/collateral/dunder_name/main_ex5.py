@@ -1,13 +1,17 @@
-import pdbr; pdbr.set_trace()
+import pdbr
+
+pdbr.set_trace()
 # Code Structure
 
 # REUSABLE SECTION #####
 # CONSTANTS
 PI = 3.14
 
+
 # Functions
 def func1():
     print("Hello world")
+
 
 # Classes
 class SomeClass:

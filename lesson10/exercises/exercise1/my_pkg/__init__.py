@@ -1,5 +1,6 @@
 import os
 
+
 def print_my_ip():
     # There are various ways to obtain your IP address (Linux/MacOS specific)
     inet_data = os.popen("ifconfig -a | grep 'inet '").read()
