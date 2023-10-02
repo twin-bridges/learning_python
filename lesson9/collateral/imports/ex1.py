@@ -1,5 +1,5 @@
-import re
-import getpass
+import re  # noqa
+import getpass  # noqa
 import pdbr
 
 pdbr.set_trace()
