@@ -21,7 +21,7 @@ class TelnetConn:
     @host.setter
     def host(self, value):
         if value != self._host:
-            ip_addr = gethostbyname(value)
+            ip_addr = gethostbyname(value)  # noqa
             self._host = value
             del self.telnet_conn
             self._open()

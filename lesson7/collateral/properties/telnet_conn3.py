@@ -1,7 +1,6 @@
 from telnetlib import Telnet
 import time
 import re
-from socket import gethostbyname
 from getpass import getpass
 
 

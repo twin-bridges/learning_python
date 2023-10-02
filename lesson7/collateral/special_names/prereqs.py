@@ -1,3 +1,6 @@
+import pdbr
+
+
 class NetDevice:
     def __init__(self, device_type, host, username, password, port=22):
         # Name mangling
@@ -18,6 +21,5 @@ nd = NetDevice(
     username="admin",
     password="cisco123",
 )
-import pdbr
 
 pdbr.set_trace()
