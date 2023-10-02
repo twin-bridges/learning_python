@@ -1,5 +1,6 @@
 from rich import print
 
+
 class NetDevice:
     addresses = {
         "sf1": "365 Main Street, San Francisco, CA 94105",

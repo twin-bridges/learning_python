@@ -2,14 +2,7 @@ import pdbr
 
 
 class NetworkDevice:
-    def __init__(
-        self,
-        device_type,
-        host,
-        username,
-        password,
-        conn_type="ssh"
-    ):
+    def __init__(self, device_type, host, username, password, conn_type="ssh"):
         self.device_type = device_type
         self.host = host
 
@@ -31,6 +24,7 @@ class TelnetConn:
 
     def __repr__(self):
         return "TelnetConn Object"
+
 
 class SSHConn:
     def __init__(self, device_type, host, username, password):

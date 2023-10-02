@@ -51,6 +51,7 @@ class Connection:
 
         self.channel = self.open()
 
+
 class SSHConn(Connection):
     def __repr__(self):
         return "SSHConn Object"

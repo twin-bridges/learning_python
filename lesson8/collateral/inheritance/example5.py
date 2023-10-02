@@ -26,7 +26,7 @@ if __name__ == "__main__":
         host="rtr1.domain.com",
         username="admin",
         password="cisco123",
-        key_file="~/.ssh/my_ssh_key"
+        key_file="~/.ssh/my_ssh_key",
     )
 
     pdbr.set_trace()

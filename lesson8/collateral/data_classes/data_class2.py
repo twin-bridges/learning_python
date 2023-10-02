@@ -9,6 +9,7 @@ class NetDevice:
     password: str
     device_type: str = "cisco_ios"
 
+
 rtr1 = NetDevice(
     host="rtr1.domain.com",
     username="admin",

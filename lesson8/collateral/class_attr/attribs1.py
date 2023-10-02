@@ -67,11 +67,7 @@ if __name__ == "__main__":
         "rtr2.domain.com",
         "rtr2.domain.com",
     ):
-        tc = TelnetConn(
-            host=host,
-            username=username,
-            password=password
-        )
+        tc = TelnetConn(host=host, username=username, password=password)
         tc.write("\n")
         data = tc.read()
         print(data)
