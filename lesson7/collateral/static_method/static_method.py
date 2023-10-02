@@ -1,11 +1,8 @@
-
-
 def my_method(arg1="Hello World!"):
     print(arg1)
 
 
 class MyClass:
-
     @staticmethod
     def my_method(arg1="Hello World!"):
         print(arg1)
@@ -25,5 +22,3 @@ def process_md5(md5_output, pattern=r"=\s+(\S+)"):
         return match.group(1)
     else:
         raise ValueError(f"Invalid output from MD5 command: {md5_output}")
-
-

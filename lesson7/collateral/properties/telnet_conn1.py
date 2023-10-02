@@ -53,15 +53,12 @@ if __name__ == "__main__":
     username = "pyclass"
     password = getpass("Enter router password: ")
 
-    tc = TelnetConn(
-        host="rtr2.domain.com",
-        username=username,
-        password=password
-    )
+    tc = TelnetConn(host="rtr2.domain.com", username=username, password=password)
     tc.login()
     tc.write("\n")
     data = tc.read()
     print(data)
 
-    import pdbr; pdbr.set_trace()
+    import pdbr
 
+    pdbr.set_trace()

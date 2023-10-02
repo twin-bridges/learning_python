@@ -52,11 +52,7 @@ if __name__ == "__main__":
     username = "admin"
     password = getpass("Enter router password: ")
 
-    tc1 = TelnetConn(
-        host=host1,
-        username=username,
-        password=password
-    )
+    tc1 = TelnetConn(host=host1, username=username, password=password)
     tc1.login()
     tc1.write("\n")
     data = tc1.read()
