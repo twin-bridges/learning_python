@@ -13,7 +13,6 @@ section_pattern = r"^Chassis id:.*?Vlan ID:[\w ]+"
 results = re.findall(section_pattern, lldp_data, flags=re.DOTALL | re.M)
 print()
 for lldp_entry in results:
-
     # Initialize to null strings
     local_port, remote_system_name, remote_port = ("", "", "")
     m = re.search(r"^Port id: (\S+)", lldp_entry, flags=re.M)
