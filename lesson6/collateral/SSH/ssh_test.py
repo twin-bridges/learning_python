@@ -1,5 +1,6 @@
 import paramiko
 from getpass import getpass
+import pdbr
 
 host = "cisco1.domain.com"
 username = "pyclass"
@@ -13,8 +14,6 @@ remote_conn_pre.connect(
 )
 
 remote_conn = remote_conn_pre.invoke_shell()
-
-import pdbr
 
 pdbr.set_trace()
 pass
