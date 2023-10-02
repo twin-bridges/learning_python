@@ -1,0 +1,16 @@
+
+Create a new package named new_pkg.
+
+This directory should have two modules mod1.py and mod2.py.
+
+Each module should have a function that prints a out a message.
+
+Create a __init__.py for the package.
+
+In the __init__.py, import your two functions from mod1 and mod2.
+
+Create a separate program that imports your pkg and executes the two functions.
+
+Verify that the two messages are printed out.
+
+
