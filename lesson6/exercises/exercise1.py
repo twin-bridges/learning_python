@@ -4,7 +4,7 @@ import time
 
 def read(telnet_conn, sleep=1.5):
     time.sleep(sleep)
-    data = tn.read_very_eager().decode()
+    data = telnet_conn.read_very_eager().decode()
     return data
 
 
