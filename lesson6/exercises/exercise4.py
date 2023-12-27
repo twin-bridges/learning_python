@@ -22,7 +22,7 @@ def login(telnet_conn, username, password):
     data = read(telnet_conn)
     output = data
     if re.search(r"sername", data):
-        write(telnet_conn, "pyclass\n")
+        write(telnet_conn, f"{username}\n")
         data = read(telnet_conn)
         output += data
     if re.search(r"ssword", data):
